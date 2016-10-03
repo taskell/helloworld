@@ -1,7 +1,7 @@
 module Main where
 
-import Lib
+import qualified Lib as L
 
 main :: IO ()
-main = printHello
+main = L.printHello
 
