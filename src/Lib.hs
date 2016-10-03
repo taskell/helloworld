@@ -1,6 +1,12 @@
 module Lib
-    ( someFunc
+    ( printHello
     ) where
 
-someFunc :: IO ()
-someFunc = putStrLn "someFunc"
+data HelloString = HelloWorld
+
+instance Show HelloString where
+    show HelloWorld = show "Hello world"
+
+printHello :: IO ()
+printHello = print HelloWorld
+
